@@ -85,3 +85,12 @@
 // const [name, age] = myProfile;
 // const message4 = `私の名前は${name}です。年練は${age}歳です。`;
 // console.log(message4);
+
+// デフォルト値、引数など
+// アロー関数の引数にnameを設定 関数実行時に引数を渡さないとundefinedと表示される。
+// デフォルト値を設定して引数を渡さない場合の初期値を決められる
+// 引数を渡した場合は初期値は表示されない
+const sayHello = (name = "ゲスト") => {
+  console.log(`こんにちは！${name}さん！`);
+};
+sayHello();
