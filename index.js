@@ -46,21 +46,42 @@
 // const message2 = `私の名前は${name}です。年齢は、${age}です。`;
 // console.log(message2);
 
-// アロー関数
+// // アロー関数
+// // 従来の関数
+// function func1(str) {
+//   return str;
+// }
+// console.log(func1("func1です"));
 
-// 従来の関数
-function func1(str) {
-  return str;
-}
-console.log(func1("func1です"));
+// // アロー関数
+// const func2 = (str) => {
+//   return str;
+// };
+// console.log(func2("func2です"));
 
-// アロー関数
-const func2 = (str) => {
-  return str;
-};
-console.log(func2("func2です"));
+// const func3 = (num1, num2) => {
+//   return num1 + num2;
+// };
+// console.log(func3(10, 10));
 
-const func3 = (num1, num2) => {
-  return num1 + num2;
-};
-console.log(func3(10, 10));
+// // 分割代入
+// const myProfile = {
+//   name: "かぶ",
+//   age: 28,
+// };
+
+// const message1 = `私の名前は${myProfile.name}です。年齢は${myProfile.age}です。`;
+// console.log(message1);
+// // オブジェクトの中身を取り出すのにテンプレート文字列で毎回myProfileと記述するのは面倒
+// // myProfileからnameとageをnameとageという変数で取り出す。
+// const { name, age } = myProfile;
+// const message2 = `私の名前は${name}です。年齢は${age}歳です。`;
+// console.log(message2);
+
+// const myProfile = ["かぶ", 27];
+// const message3 = `私の名前は${myProfile[0]}です。年練は${myProfile[1]}歳です。`;
+// console.log(message3);
+
+// const [name, age] = myProfile;
+// const message4 = `私の名前は${name}です。年練は${age}歳です。`;
+// console.log(message4);
