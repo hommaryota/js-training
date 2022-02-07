@@ -90,7 +90,42 @@
 // アロー関数の引数にnameを設定 関数実行時に引数を渡さないとundefinedと表示される。
 // デフォルト値を設定して引数を渡さない場合の初期値を決められる
 // 引数を渡した場合は初期値は表示されない
-const sayHello = (name = "ゲスト") => {
-  console.log(`こんにちは！${name}さん！`);
-};
-sayHello();
+// const sayHello = (name = "ゲスト") => {
+//   console.log(`こんにちは！${name}さん！`);
+// };
+// sayHello();
+
+// // スプレッド構文
+// // 配列展開
+// const arr1 = [1, 2];
+// // console.log(arr1);
+// // console.log(...arr1);
+// const sumFunc = (num1, num2) => {
+//   console.log(num1 * num2);
+// };
+// sumFunc(arr1[0], arr1[1]);
+// sumFunc(...arr1);
+
+// // まとめる
+// const arr2 = [1, 2, 3, 4, 5];
+// const [num1, num2, ...arr3] = arr2;
+// console.log(num1);
+// console.log(num2);
+// console.log(arr3);
+
+// 配列のコピー、結合
+// const arr4 = [10, 20];
+// const arr5 = [30, 40];
+
+// // スプレッド構文で変数ごとコピーしてしまうと、arr8を編集した際に元の変数も影響を受けてしまう。
+// const arr6 = [...arr4];
+// arr6[0] = 100;
+// console.log(arr6);
+// console.log(arr4);
+
+// // const arr7 = [...arr4, ...arr5];
+// // console.log(arr7);
+
+// // スプレッド構文で変数ごとコピーしてしまうと、arr8を編集した際に元の変数も影響を受けてしまう。
+// // const arr8 = arr4;
+// // console.log(arr8);
