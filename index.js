@@ -129,3 +129,46 @@
 // // スプレッド構文で変数ごとコピーしてしまうと、arr8を編集した際に元の変数も影響を受けてしまう。
 // // const arr8 = arr4;
 // // console.log(arr8);
+
+// mapやfilterを使った配列の処理
+// const nameArr = ["田中", "山田", "かぶ"];
+// 従来のやり方
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(nameArr[index]);
+// }
+
+// // map
+// const nameArr2 = nameArr.map((name) => {
+//   return name;
+// });
+// console.log(nameArr2);
+
+// 1行で書く場合
+// nameArr.map((name) => console.log(name));
+
+// const numArr = [1, 2, 3, 4, 5];
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 1;
+// });
+// console.log(newNumArr);
+
+// const nameArr = ["田中", "山田", "かぶ"];
+// for (let i = 0; i < nameArr.length; i++) {
+//   console.log(`${i + 1}番目は,${nameArr[i]}です。`);
+// }
+// nameArr.map((name, index) => {
+//   console.log(`${index + 1}番目は${name}です。`);
+// });
+
+// nameArr.map((name) => {
+//   console.log(`${name}です。`);
+// });
+
+// const newNameArr = nameArr.map((name) => {
+//   if (name === "かぶ") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+// console.log(newNameArr);
