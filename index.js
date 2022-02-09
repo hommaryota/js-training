@@ -172,3 +172,44 @@
 //   }
 // });
 // console.log(newNameArr);
+
+// 参考演算子
+// ある条件がtrueの時:falseの時
+// const val1 = 1 > 0 ? "trueです" : "falseです。";
+// console.log(val1);
+
+// const num = '1300';
+// 数値がきた場合にカンマ区切りをつけてくれる関数
+// console.log(num.toLocaleString());
+
+// const formattedNum = typeof num === "number" ? num.toLocaleString() : "数値を設定して下さい";
+// console.log(formattedNum);
+
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? "100を超えています" : "許容範囲です";
+// };
+// console.log(checkSum(10, 140));
+
+// 論理演算子の本当の意味を知ろう
+// ||（どちらかが当てはまればtrue） && （両方当てはまればtrue）
+// const flag1 = true;
+// const flag2 = false;
+// if (flag1 || flag2) {
+//   console.log("1か2がtrueになります");
+// }
+// if (flag1 && flag2) {
+//   console.log("1と2がtrueになります");
+// }
+
+// ||の左側がfalseになる時右を返す
+// ||の左側がtrueになる時は左を返す
+// jsの場合はnullはfalse判定
+// const num = null;
+// const fee = num || "金額未設定です。";
+// console.log(fee);
+
+// ||の左側がtrueなら右を返す
+// ||の左側がfalseなら左を返す
+// const num2 = 100;
+// const fee2 = num2 && "何か設定されました";
+// console.log(fee2);
