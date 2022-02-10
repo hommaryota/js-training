@@ -1,16 +1,16 @@
-import React from "react";
+import React,{useState} from "react";
 import ColorfulMessage from './components/ColorfulMessage'
 
 const App = () => {
   // buttonクリック時の関数
-  const onClickButton = () => alert();
-
-  // cssの変数定義
-  const contentStyle = {
-    color: 'blue',
-    fontSize:'18px',
+  const onClickCountUp = () => {
+    setNum(num +1);
   }
 
+  // useStateを使うための記述
+  // 配列1つ目はstateとして変数→自由に命名できる 2つ目はstateを更新していく関数setをつけるのが一般的
+  // useState()の引数に初期値を設定できる
+  const [num, setNum] = useState(0);
   // Jsx記法
   return (
     <>
@@ -19,7 +19,8 @@ const App = () => {
       <ColorfulMessage color="blue">お元気ですか？</ColorfulMessage>
       <ColorfulMessage color="pink">元気です。</ColorfulMessage>
       {/* HTMLで使うイベントやクラス名はキャメルケースで記述する */}
-      <button onClick={onClickButton}>ボタン</button>
+      <button onClick={onClickCountUp}>カウントアップ</button>
+      <p>{num}</p>
     </>
   );
 };
