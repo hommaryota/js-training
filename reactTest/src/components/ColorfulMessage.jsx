@@ -2,7 +2,7 @@ import React from 'react'
 
 // propsという変数を指定する（名前は何でもいいけど、propsがわかりやすい）
 // 引数を設定すると、他のコンポーネントから送られてきた値を受け取れる
-const ColorfulMessage = (props) => {
+export const ColorfulMessage = (props) => {
   // 分割代入 下記を設定しないと、毎回props.childrenの様に、propsを記載しないといけない
   const {color , children}= props
   const contentStyle = {
@@ -19,4 +19,4 @@ const ColorfulMessage = (props) => {
 
 
 
-export default ColorfulMessage;
+// export default ColorfulMessage;
